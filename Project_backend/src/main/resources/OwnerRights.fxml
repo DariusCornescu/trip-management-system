@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="850.0" style="-fx-background-color: #fffbf0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.darius.project.gui.OwnerRightsController">
+    <children>
+        <Pane layoutX="-6.0" layoutY="-1.0" prefHeight="425.0" prefWidth="858.0">
+            <children>
+                <HBox layoutY="61.0" prefHeight="370.0" prefWidth="858.0">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="358.0" prefWidth="334.0" style="-fx-padding: 10;">
+                            <children>
+                                <GridPane alignment="CENTER" prefHeight="120.0" prefWidth="314.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.4000244140625" minWidth="10.0" prefWidth="170.4000244140625" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.20001220703128" minWidth="10.0" prefWidth="145.59997558593753" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="39.199981689453125" minHeight="10.0" prefHeight="31.599987792968747" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="46.0" minHeight="0.0" prefHeight="32.4" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="76.0" minHeight="4.000018310546892" prefHeight="39.19999999999999" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Button fx:id="addUserBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Add User" textFill="#fffbf0">
+                                            <GridPane.margin>
+                                                <Insets left="25.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button fx:id="searchUserBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Search User" textFill="#fffbf0" GridPane.columnIndex="1" />
+                                        <Button fx:id="deleteUserBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Delete User" textFill="#fffbf0" GridPane.rowIndex="1">
+                                            <GridPane.margin>
+                                                <Insets left="25.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button fx:id="updateUserBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Update User" textFill="#fffbf0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <GridPane.margin>
+                                                <Insets />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Pane prefHeight="47.0" prefWidth="142.0" GridPane.rowIndex="2">
+                                            <children>
+                                                <Button fx:id="UndoUser" layoutX="56.0" layoutY="6.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #943d24;" text="Undo" textFill="#fffbf0" />
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <children>
+                                                <Button fx:id="RedoUser" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #943d24;" text="Redo" textFill="#fffbf0" />
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </GridPane>
+                                <Pane prefHeight="22.0" prefWidth="314.0" />
+                                <Pane prefHeight="22.0" prefWidth="314.0" />
+                                <Pane prefHeight="22.0" prefWidth="314.0" />
+                                <GridPane alignment="CENTER" prefHeight="120.0" prefWidth="314.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.4000244140625" minWidth="10.0" prefWidth="170.4000244140625" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.20001220703128" minWidth="10.0" prefWidth="145.59997558593753" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="39.199981689453125" minHeight="10.0" prefHeight="31.599987792968747" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="66.20001220703125" minHeight="0.0" prefHeight="44.59997558593749" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="94.39999389648436" minHeight="4.000018310546892" prefHeight="55.800024414062506" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Button fx:id="addTripBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Add Trip" textFill="#fffbf0">
+                                            <GridPane.margin>
+                                                <Insets left="25.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button fx:id="searchTripBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Search Trip" textFill="#fffbf0" GridPane.columnIndex="1" />
+                                        <Button fx:id="deleteTripBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Delete Trip" textFill="#fffbf0" GridPane.rowIndex="1">
+                                            <GridPane.margin>
+                                                <Insets left="25.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button fx:id="updateTripBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #943d24;" text="Update Trip" textFill="#fffbf0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <GridPane.margin>
+                                                <Insets />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                            <children>
+                                                <Button fx:id="UndoTrip" layoutX="56.0" layoutY="6.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #943d24;" text="Undo" textFill="#fffbf0" />
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <children>
+                                                <Button fx:id="RedoTrip" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #943d24;" text="Redo" textFill="#fffbf0" />
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="386.0" prefWidth="285.0">
+                            <children>
+                                <Pane prefHeight="58.0" prefWidth="292.0">
+                                    <children>
+                                        <Label alignment="CENTER" layoutY="-6.0" prefHeight="30.0" prefWidth="292.0" text="User list">
+                                            <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <ListView fx:id="UserListCollection" prefHeight="192.0" prefWidth="285.0" style="-fx-border-color: #943d24;" />
+                                <Pane prefHeight="58.0" prefWidth="292.0">
+                                    <children>
+                                        <Label alignment="CENTER" layoutY="-2.0" prefHeight="30.0" prefWidth="292.0" text="Trip list">
+                                            <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <ListView fx:id="TripListCollection" prefHeight="200.0" prefWidth="285.0" />
+                                <Pane prefHeight="42.0" prefWidth="285.0" />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="370.0" prefWidth="237.0">
+                            <children>
+                                <Pane prefHeight="50.0" prefWidth="227.0" />
+                                <TextField fx:id="UserIDField" promptText="    ID" />
+                                <TextField fx:id="UserNameField" promptText="    Username" />
+                                <TextField fx:id="UserPasswordField" promptText="    Password" />
+                                <Pane prefHeight="77.0" prefWidth="227.0" />
+                                <TextField fx:id="TripIDField" promptText="    ID" />
+                                <TextField fx:id="TripAttractionField" promptText="    AttractionName" />
+                                <TextField fx:id="TripTransportField" promptText="    TransportCompany" />
+                                <TextField fx:id="TripDepartureField" promptText="    DepartureTime" />
+                                <TextField fx:id="TripPriceField" promptText="     Price" />
+                                <TextField fx:id="TripSeatsField" promptText="     AvailableSeats" />
+                            </children>
+                            <padding>
+                                <Insets left="5.0" right="5.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Label alignment="CENTER" blendMode="DARKEN" layoutX="6.0" layoutY="-3.0" prefHeight="62.0" prefWidth="850.0" style="-fx-background-color: #2d2d2d; -fx-text-fill: #fffbf0;" text="Owner's Rights" textAlignment="CENTER" textFill="#fffbf0" wrapText="true">
+                    <font>
+                        <Font name="Times New Roman" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="ExitButton" layoutX="23.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: #2d2d2d; -fx-border-color: #fffbf0;" text="Exit" textFill="#fffbf0">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
